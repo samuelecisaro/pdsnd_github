@@ -23,5 +23,6 @@ Websites consulted:
 https://www.geeksforgeeks.org/  
 https://stackoverflow.com/  
 https://www.codecademy.com/  
+https://www.freenetst.it/make_website/markdown/  
 Udacity course: https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104
 
