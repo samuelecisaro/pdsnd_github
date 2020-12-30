@@ -27,9 +27,8 @@ def get_filters():
     months.append("all")
     days = [single_day.lower() for single_day in list(calendar.day_name)]
     days.append("all")
-    city = ''
-    month = ''
-    day = ''
+    city = month = day = ''
+
     
     #che if input values are right
     while(city not in cities):
@@ -61,7 +60,7 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     
     #create three new columns for week day, month and hour
-    df['day_of_week'] = df['Start Time'].dt.weekday_name
+    df['day_of_week'] = df['Start Time'].dt.day_name()
     df['month'] = df['Start Time'].dt.month
     df['hour'] = df['Start Time'].dt.hour
     
