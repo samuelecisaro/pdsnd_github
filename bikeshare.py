@@ -27,9 +27,8 @@ def get_filters():
     months.append("all")
     days = [single_day.lower() for single_day in list(calendar.day_name)]
     days.append("all")
-    city = ''
-    month = ''
-    day = ''
+    city = month = day = ''
+
     
     #che if input values are right
     while(city not in cities):
